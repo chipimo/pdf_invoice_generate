@@ -33,11 +33,6 @@ interface StatementProps {
  * @returns {Promise<Object>} A promise that resolves to an object containing either a success message or an error message.
  */
 
-const serviceAccount = require('./prod_config/serviceAccountKeyProd.json');
-
-const jsonString = JSON.stringify(serviceAccount);
-console.log(jsonString);
-
 export const onRequestGenerateStatements = async (props: StatementProps) => {
   await deleteFailedStatements();
   const { date, roles } = props;
