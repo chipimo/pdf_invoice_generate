@@ -21,7 +21,7 @@ const fs = require('fs');
 // const serviceAccount = require('../dev_config/serviceAccountKeyDev.json');
 // !! PRODUCTION
 // const serviceAccount = require('../prod_config/serviceAccountKeyProd.json');
-const secretFilePath = '/etc/secrets/serviceAccountKeyProd.json';
+const secretFilePath = '/etc/secrets/serviceAccountKeyProd.text';
 
 const serviceAccount = JSON.parse(fs.readFileSync(secretFilePath, 'utf8'));
 
